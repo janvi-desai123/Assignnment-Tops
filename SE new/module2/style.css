@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.para{
+    text-align: center;
+    color: yellow;
+    background-color: red;
+    text-transform: uppercase;
+}
+.nav{
+    display: inline-block;
+    width: 100%;
+    background-color: black;
+    height: 80px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    
+}
+li{
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+a:link
+{
+    color: red;
+}
+a:hover
+{
+    color: cornflowerblue;
+}
+a:visited
+{
+    color: blue;
+}
+a:active
+{
+    color: purple;
+}
