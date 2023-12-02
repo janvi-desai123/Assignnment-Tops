@@ -1,1 +1,72 @@
-question1: 
+question1: What is software? What is software engineering?
+ans:.
+- Software engineering stands for the term is made of two words, Software and
+Engineering.
+- A program is an executable code, which serves some
+computational purpose. Software is considered to be collection of executable programming code,
+associated libraries and documentations
+-Software engineering is an engineering branch associated with development of software
+product using well-defined scientific principles, methods and procedures. The outcome of
+software engineering is an efficient and reliable software product.
+----------------------------------------------------------------------------------------
+question2: Explain types of software
+ANS: 
+● Application software:application software is a computer
+software package that performs a specific function for a user, or in some
+cases, for another application.
+  EX::Microsoft Office, Paint, Powerpoint etc..
+● System software: System software coordinates the activities and functions of the hardware
+and software.
+  Ex: :Notepad ,Calculator etc..
+● Driver software: Also known as device drivers, this software is often considered a type of
+system software.
+- Device drivers control the devices and peripherals connected to a computer,
+enabling them to perform their specific tasks.
+- Every device that is connected to a computer needs at least one device
+driver to function.
+  Ex: Audio Driver,Video Driver etc..
+● Middleware:The term middleware describes software that mediates between application
+and system software or between two different kinds of application software.
+For example, middleware enables Microsoft Windows to talk to Excel and
+Word.
+  Ex:  database middleware,application server middleware
+● Programming software:Computer programmers use programming software to write code.
+Programming software and programming tools enable developers to
+develop, write, test and debug other software programs.
+  Ex: Turbo c,Eclipse,Sublime etc
+
+----------------------------------------------------------------------------------------
+question3: What is SDLC? Explain each phase of SDLC
+ans:The Software Development Life Cycle (SDLC) refers to a methodology
+with clearly defined processes for creating high-quality software.
+- The Software Development Life Cycle (SDLC) refers to a methodology
+with clearly defined processes for creating high-quality software. in
+detail, the SDLC methodology focuses on the following phases of
+software development:
+1. Requirement Gathering
+2. Analysis
+3. Designing
+4. Implementation
+5. Testing
+6. Maintenance
+
+----------------------------------------------------------------------------------------
+question4: What is DFD? Create a DFD diagram on Flipkart
+ans:A data flow diagram (DFD) maps out the flow of information for any process or system. 
+It uses defined symbols like rectangles, circles and arrows, plus short text labels, to show data inputs, outputs, storage points and the routes between each destination.
+
+----------------------------------------------------------------------------------------
+
+question5: What is Flow chart? Create a flowchart to make addition of two numbers.
+ans: A flowchart is a type of diagram that represents an algorithm, workflow or process. 
+- The flowchart shows the steps as boxes of various kinds, and their order by connecting the boxes with arrows. 
+- This diagrammatic representation illustrates a solution model to a given problem. 
+- Flowcharts are used in analyzing, designing, documenting or managing a process or program in various fields.
+
+----------------------------------------------------------------------------------------
+question6: What is Use case Diagram? Create a use-case on bill payment on paytm.
+ans: use-case diagrams model the behavior of a system and help to capture the requirements of the system.
+- Use-case diagrams describe the high-level functions and scope of a system. 
+- These diagrams also identify the interactions between the system and its actors. 
+- The use cases and actors in use-case diagrams describe what the system does and how the actors use it, but not how the system operates internally.
+- Use-case diagrams illustrate and define the context and requirements of either an entire system or the important parts of the system. 
