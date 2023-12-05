@@ -1,0 +1,88 @@
+question1:what do you understand by database.
+A database is an organized collection of structured information, or data, typically stored electronically in a computer system.
+- A database is usually controlled by a database management system (DBMS).
+- Together, the data and the DBMS, along with the applications that are associated with them, are referred to as a database system, often shortened to just database.
+- Data within the most common types of databases in operation today is typically modeled in rows and columns in a series of tables to make processing and data querying efficient. 
+- The data can then be easily accessed, managed, modified, updated, controlled, and organized. 
+- Most databases use structured query language (SQL) for writing and querying data.
+
+question2: What is Normalization?
+- Normalization is a database design technique that reduces data redundancy and eliminates undesirable characteristics like Insertion, Update and Deletion Anomalies. 
+- Normalization rules divides larger tables into smaller tables and links them using relationships. 
+- The purpose of Normalisation in SQL is to eliminate redundant (repetitive) data and ensure data is stored logically.
+- The inventor of the relational model Edgar Codd proposed the theory of normalization of data with the introduction of the First Normal Form, and he continued to extend theory with Second and Third Normal Form. 
+Later he joined Raymond F. Boyce to develop the theory of Boyce-Codd Normal Form.
+
+question3:What is Difference between DBMS and RDBMS?
+DBMS stands for Database Management System, and RDBMS is the acronym for the Relational Database Management system. In DBMS, the data is stored as a file, whereas in RDBMS, data is stored in the form of tables. To know what is the difference between RDBMS and DBMS, check out the table below.
+
+Difference between RDBMS and DBMS
+
+RDBMS: Data stored is in table format	DBMS: Data stored is in the file format
+RDBMS: Multiple data elements are accessible together	DBMS:Individual access of data elements
+RDBMS: Data in the form of a table are linked together	DBMS:No connection between data
+RDBMS:Normalisation is not achievable	DBMS:There is normalisation
+RDBMS:Support distributed database	DBMS:No support for distributed database
+RDBMS:Data is stored in a large amount	DBMS:Data stored is a small quantity
+RDBMS:Here, redundancy of data is reduced with the help of key and indexes DBMS:Data redundancy is common
+RDBMS supports multiple users	DBMS supports a single user
+RDBMS:It features multiple layers of security while handling data	DBMS:There is only low security while handling data
+RDBMS:The software and hardware requirements are higher	DBMS:The software and hardware requirements are low
+RDBMS:Oracle, SQL Server.	DBMS:XML, Microsoft Access.
+
+question4: 
+
+question5: What do you understand By Data Redundancy?
+Data redundancy is when multiple copies of the same information are stored in more than one place at a time. 
+This challenge plagues organizations of all sizes in all industries and leads to elevated storage costs, errors, and compromised analytics.
+
+question6:What is DDL Interpreter?
+DDL Interpreter DDL expands to Data Definition Language. DDL Interpreter as the name suggests interprets the DDL statements such as schema definition statements like create, delete, etc. 
+The result of this interpretation is a set of a table that contains the meta-data which is stored in the data dictionary.
+
+question7: what is DML compiler in SQL?
+A data manipulation language (DML) is a computer programming language used for adding (inserting), deleting, and modifying (updating) data in a database. 
+A DML is often a sublanguage of a broader database language such as SQL, with the DML comprising some of the operators in the language.
+
+question8:  What is SQL Key Constraints writing an Example of SQL Key Constraint
+SQL constraints are used to specify rules for the data in a table.
+
+Constraints are used to limit the type of data that can go into a table. This ensures the accuracy and reliability of the data in the table. If there is any violation between the constraint and the data action, the action is aborted.
+
+Constraints can be column level or table level. Column level constraints apply to a column, and table level constraints apply to the whole table.
+
+The following constraints are commonly used in SQL:
+
+NOT NULL - Ensures that a column cannot have a NULL value
+UNIQUE - Ensures that all values in a column are different
+PRIMARY KEY - A combination of a NOT NULL and UNIQUE. Uniquely identifies each row in a table
+FOREIGN KEY - Prevents actions that would destroy links between tables
+CHECK - Ensures that the values in a column satisfies a specific condition
+DEFAULT - Sets a default value for a column if no value is specified
+CREATE INDEX - Used to create and retrieve data from the database very quickly
+
+question9: What is save Point? How to create a save Point write a Query?
+A SAVEPOINT is a point in a transaction in which you can roll the transaction back to a certain point without rolling back the entire transaction. 
+Syntax for Savepoint command: SAVEPOINT SAVEPOINT_NAME;
+This command is used only in the creation of SAVEPOINT among all the transactions.
+
+question10: What is trigger and how to create a Trigger in SQL?
+A trigger is a stored procedure in a database that automatically invokes whenever a special event in the database occurs. 
+For example, a trigger can be invoked when a row is inserted into a specified table or when specific table columns are updated in simple words a trigger is a collection of SQL statements with particular names that are stored in system memory. 
+It belongs to a specific class of stored procedures that are automatically invoked in response to database server events. 
+Every trigger has a table attached to it.
+syntax:
+create trigger [trigger_name] 
+
+[before | after]  
+
+{insert | update | delete}  
+
+on [table_name]  
+
+[for each row]  
+
+[trigger_body] 
+
+
+
