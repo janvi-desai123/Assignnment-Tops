@@ -18,3 +18,4 @@ create table salespeople(
 --  displays all the information about all salespeople
 
 select * from salespeople;
+
