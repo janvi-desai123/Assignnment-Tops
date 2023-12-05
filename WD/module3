@@ -1,0 +1,30 @@
+Q1) What are the new tags added in HTML5?
+Ans: HTML5 introduced several new elements and attributes to enhance the capabilities of web development. Some of are listed Below
+-> ‘<header>’, ‘<nav>’, ‘<article>’, ‘<section>’, ‘<aside>’, ‘<main>’, ‘<audio>’, ‘<video>’, ‘<picture>’
+
+Q2) How to embed audio and video in a webpage?
+Ans: To Embed audio and video in a webpage, you can use the ‘<audio>’ and ‘<video>’ elements in HTML5.
+-> ‘<audio>’ element
+<audio controls>
+  <source src="audio.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+-> ‘<video>’ element
+<video controls>
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support the video element.
+</video>
+
+Q3) Semantic element in HTML5?
+Ans: In HTML5, semantic elements are elements that provide meaning to the structure and content of a web page. Most of that elements are similar like ‘<div>’ and behave like it but it gives meaning to those elements. Some Examples are as below
+-> ‘<header>’ Represents introductory content at the beginning of a section or a page. Commonly used for page titles, logos, and navigation menus.
+-> ‘<aside>’ Marks content that is tangentially related to the content around it, often used for sidebars, advertisements, or pull quotes.
+-> ‘<main>’ Signifies the main content of a document, and there should be only one <main> element per page.
+-> ‘<footer>’ Represents the footer of a section or a page, typically containing copyright information, contact details, or other relevant information.
+
+Q4) Canvas and SVG tags
+Ans: Canvas and SVG are two different ways to create graphics in web development. They are both HTML5 technologies used to render graphics, but they have different approaches and use cases.
+Canvas: 
+The <canvas> element is used to draw graphics, including 2D shapes, text, and images, on a web page dynamically using JavaScript. It provides a bitmap-based approach where you can directly manipulate individual pixels and create animations or interactive content. The <canvas> element is a container for graphics, and you draw on it through JavaScript commands.
+SVG: 
+SVG (Scalable Vector Graphics) is a markup language that defines vector-based graphics. It uses XML to describe shapes, paths, and text, and these graphics are resolution-independent and can be scaled without losing quality. SVG graphics are created as standalone XML files or embedded directly into an HTML document using the <svg> element.
