@@ -1,0 +1,204 @@
+Module 4) CSS and CSS 3
+
+Q 1) What are the benefits of using CSS?
+Ans: CSS is stand for cascading style sheets and it allow us to style the web pages
+-> Some key advantages are below
+-> CSS allows you to separate the structure (HTML) and design (styling) of a web page.
+-> With the help of CSS, we can define CSS and use that in more than one Elements.
+-> With CSS we can create Responsive Design.
+-> With CSS, you can make global style changes by modifying a single file, which is especially beneficial for large websites.
+-> CSS provides a more efficient way to style web pages compared to inline styling or using HTML attributes.
+-> CSS provides animation and transition properties, enabling you to create interactive and engaging user experiences without relying on JavaScript or other technologies.
+
+Q 2) What are the disadvantages of CSS?
+Ans: -> One of the most significant challenges in CSS development is dealing with differences in how various web browsers render CSS rules. Cross-browser compatibility issues can require additional effort and testing to ensure consistent styling across different browsers.
+-> CSS can be complex, especially for beginners. Learning to use CSS effectively and efficiently may require time and effort, and understanding CSS layouts, positioning, and specificity can be challenging.
+
+
+
+Q 3) What is the difference between CSS2 and CSS3?
+Ans: CSS3 is a more advanced and feature-rich version of CSS compared to CSS2. It Introduces a wide range of capabilities, including advanced selectors, enhanced layout models, transitions, animations, and more making it powerful tool to make modern web design.
+-> Selectors: In CSS2 we have class selectors, element selectors, id selectors, pseudo-classes and pseudo-elements. And CSS3 introduced advanced selectors like attribute selectors, multiple selectors, and the: not() pseudo-class.
+-> Box-model: CSS3 extended the box model with properties like box-sizing and introduced the box-shadow and border-radius properties for creating rounded corners and adding shadows to elements.
+-> Filters: CSS3 introduced filter properties like blur, grayscale, and brightness, which can be used to apply visual effects to elements.
+
+Q 4) Name a few CSS style components
+Ans: CSS style components also known as CSS properties or CSS attributes, used to define visual presentation of HTML elements. 
+Here are some CSS style components
+-> color properties: “color”, “background-color”, “border-color”
+-> Typography properties: “font-size”, “font-family”, “font-weight”
+-> Positioning properties: “display”, “position”, “float”
+-> Background properties: “background-image”, “background-size”, “background-repeat”
+-> Transition and Animation: “transition”, “animation”
+
+Q 5) What do you understand by CSS opacity?
+Ans: In CSS, opacity is referring to which element is transparent or translucent. It determines how much the content of an element is visible through its background. Opacity is specified as a value between 0 and 1.
+
+Q 6) How can the background color of an element be changed?
+Ans: The background color can be changed by using “background-color” property.
+We can define background color of an element having class named “red”, as below
+.red {
+	background-color: “red”
+}
+-> we can define color like “red” or “blue” OR using hex value like “#00FF00” OR using rgb(255, 0, 0)
+
+Q 7) How can image repetition of the backup be controlled?
+Ans: we can control repetition of image with property called “background-repeat” and can set it as our need
+-> If we need to let it repeat in X direction, we can set “background-repeat: repeat-x”, and if we need to let it repeat in Y direction, we can set “background-repeat: repeat-y”, and if we don’t want to let it repeat in both directions, we can set “background-repeat: no-repeat”.
+
+Q 8) What is the use of the background-position property?
+Ans: As from the name suggest, we can set background position in that element
+-> if we want background to touch left and top, we can assign “background-position: top left”
+-> similar to this we can assign properties like “top left”, “top right”, “bottom right”, “bottom left”, “center center”, “center top”, “center bottom”
+-> we can also assign percentage value in this (the first property is in X direction and second one is in Y direction): “0% 0%”, “10%” (will take top 10% and left 10%), “50% 30%”
+
+
+Q 9) Which property controls the image scroll in the background?
+Ans: The property to control background in CSS is “background-attachment”
+-> “background-attachment: scroll”: This causes the background image to scroll along with the content as the user scroll down the page. 
+-> “background-attachment: fixed”: This causes the background image remain fixed in place relative to the viewport. 
+
+Q 10) Why should background and color be used as separate properties?
+Ans: Separating background and text color into separate CSS properties is best practice to have. It promotes readability, accessibility and easy maintenance.
+-> In a large website or application, when you separate background and text color, you can make global changes to your styling without affecting the content or layout. This is particularly valuable when you have many pages or components to manage.
+
+Q 11) How to center block elements using CSS1?
+Ans: In CSS1 we don’t have CSS properties like “flex” OR “transform” but, we have “display: inline-block” which we can use to center div
+IN HTML:
+<div class="container">
+  <div class="element">
+    <!-- Your content goes here -->
+  </div>
+</div>
+
+IN CSS:
+.container {
+  text-align: center; /* center child element */
+}
+
+.element {
+  */ setting display inline-block which reduces its size to content */
+  display: inline-block;
+}
+
+Q 12) How to maintain the CSS specifications?
+Ans: Maintaining compliance with CSS specifications and best practices is essential for ensuring that your web projects are consistent, accessible, and future-proof.
+-> Here are some steps to maintain CSS specifications
+-> Keep up-to-date with the latest CSS specifications and developments. Follow resources like the official W3C (World Wide Web Consortium) website, web development blogs, and CSS-related forums or social media channels.
+-> Thoroughly read the official documentation for CSS specifications relevant to your projects.
+-> Use tools like CSS validators to check for errors and ensure compliance.
+-> Organize your CSS code into modular files or components. This makes it easier to manage and maintain your styles, especially in larger projects.
+-> Try to use meaningful class and Id names. And practicing efficient CSS selectors, avoiding global styles and maintaining consistent coding style is good to have to be good in CSS.
+
+Q 13) What are the ways to integrate CSS in a web page?
+Ans: There are three ways to integrate CSS in a web page
+-> Inline CSS:
+We can apply CSS within the html document (within html opening tag) using style attribute. This method is not recommended for large-scale projects but can be used for quick styling adjustments.
+<p style= “color: blue;”>This is blue Text </p>
+
+
+-> Internal CSS:
+Internal CSS can be defined within the “<style>” element in HTML document’s head section. It allows you to define CSS rules specific to that page.
+<!DOCTYPE html>
+<html>
+<head>
+  <style> p {color: green;} </style>
+</head>
+<body> <p>This is a green text. </p> </body>
+</html>
+
+-> External CSS:
+External CSS involves creating a separate CSS file with the “.css” extension and linking it to the HTML document using the <link> element. This method promotes modularity and reusability of styles.
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <p>This text is styled using an external CSS file. </p>
+</body>
+</html>
+In style.css 
+p {
+  color: purple;
+}
+
+
+
+Q 14) What is embedded style sheets?
+Ans: Embedded style sheets, also known as "internal style sheets" or "document-level style sheets," are a method of including CSS directly within an HTML document.
+-> Embedded style sheets are commonly available on web to get styles immediately.
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Embedded CSS */
+    p {color: blue; font-size: 16px;}
+    h1 {color: green; text-align: center;}
+  </style>
+</head>
+<body>
+  <h1>Welcome to My Website</h1>
+  <p>This is a paragraph with embedded styles. </p>
+</body>
+</html>
+
+Q 15) What are the external style sheets?
+Ans: External style sheets also known as external css files, are separate CSS files that contains styling rules and are linked to an HTML document. These external CSS files are maintained separately from the HTML document and can be reused across multiple web pages.
+-> To link External css files, we use the <link> element in the <head> section of your HTML document. The href attribute of the <link> element specifies the path to the external CSS file.
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+
+-> We can link multiple style shits like this:
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="custom.css">
+</head>
+
+Q 16) What are the advantages and disadvantages of using external style sheets?
+Ans: 
+-> Some of Advantages are as below:
+External CSS files can be reused across multiple web pages. This promotes consistent styling throughout a website and saves development time.
+Styles are separated from the HTML content, making it easier to update the styling of your website.
+External style sheets are suitable for large websites with many pages, providing a structured and organized way to manage styles across the entire site.
+-> Some of Disadvantages are as below:
+Loading an external CSS file requires an additional HTTP request. While modern browsers efficiently cache stylesheets, it can still introduce a slight delay in page loading, particularly on slower connections.
+For very small projects or single-page applications, the use of external style sheets may be overkill and can complicate the development process.
+Managing multiple external CSS files and understanding how they interact with each other can be challenging for beginners.
+
+Q 17) What is the meaning of the CSS selector?
+Ans: In CSS a selector is a pattern or expression used to target and select specific HTML elements within an HTML document.
+Selectors are a fundamental part of CSS and play a crucial role in determining which elements on a web page should receive the specified styles.
+Here are common types of CSS selectors:
+-> Element Selectors: 
+Selects all elements of a specified type. ‘p {…}’ selects all <p> elements.
+-> Class Selectors: 
+Selects elements with a specific class attribute value. ‘.red {…}’ selects all elements which has classname “red”.
+-> Id Selectors:
+Selects element with a specific id attribute value. ‘#blue {…}’ selects element which has id “blue”.
+-> Descendant Selector: 
+Selects elements that are descendants of another element. ‘ul li’ selects all <li> elements that are descendants of a <ul>.
+-> Child Selector: 
+Selects elements that are direct children of another element. ‘ul > li’ selects all <li> elements that are direct children of a <ul>
+-> Adjacent Sibling Selector: 
+Selects an element that is immediately preceded by a specific element. ‘h2 + p’ selects the <p> element immediately following an <h2> element.
+
+Q 18) What are the media types allowed by CSS?
+Ans: The media types allowed by CSS are Default, screen, print, speech, aural, braille. The most common used one is screen and print is also used as per its need.
+-> Media CSS can be written as starting with “@media” with name of media afterwords and styles in curly braces.
+-> screen media css can be written to style web page as per width of multiple devices.
+
+
+Q 19) What is the rule set?
+Ans: A rule set, also known simply as a "CSS rule," is a fundamental building block of CSS. It consists of a selector and one or more declarations, which define how selected HTML elements should be styled. Here's the basic structure of a CSS rule set
+selector {
+  property1: value1;
+  property2: value2;
+  /* Additional properties and values */
+}
+
+
+
+
+
+
