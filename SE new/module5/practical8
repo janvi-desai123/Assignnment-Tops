@@ -1,0 +1,2 @@
+SELECT pro_name as "Item Name", pro_price AS "Price in Rs."
+    FROM item_mast;
