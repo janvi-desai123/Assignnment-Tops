@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            width:200px;
+            margin-left: 70px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Marksheet of Information Technology</h1>
+        <table>
+            <caption>Enter marks</caption>
+            <tr>
+                <td>C language</td>
+                <td><input type="number" name="" id="C"></td>
+            </tr>
+            <tr>
+                <td>C++ language</td>
+                <td><input type="number" name="" id="Cplus"></td>
+            </tr>
+            <tr>
+                <td>database</td>
+                <td><input type="number" name="" id="database"></td>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td><input type="number" name="" id="html"></td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td><input type="number" name="" id="css"></td>
+            </tr>
+            <tr>
+                <td>php</td>
+                <td><input type="number" name="" id="php"></td>
+            </tr>
+            <tr>
+                <td>Core java</td>
+                <td><input type="number" name="" id="java"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><button id="result" onclick="add_value()">result</button></td>
+            </tr>
+            <tr>
+                <td align="right">Total is <b id="total">0</b>/350</td>
+                <td align="center">Percentage is <b id="pr">0</b>%</td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        
+        function add_value()
+        {
+            let c_lan=document.getElementById("C").value;
+        let cplus_lan=document.getElementById("Cplus").value;
+        let database=document.getElementById("database").value;
+        let html=document.getElementById("html").value;
+        let css=document.getElementById("css").value;
+        let php=document.getElementById("php").value;
+        let java=document.getElementById("java").value;
+       let total;
+       
+        total=document.getElementById("total").innerHTML=Number(c_lan)+Number(cplus_lan)+Number(database)+Number(html)+Number(css)+Number(php)+Number(java);
+           pr=document.getElementById("pr").innerHTML=Number(total/350)*100; 
+        }
+      
+    </script>
+</body>
+</html>
