@@ -1,15 +1,15 @@
 #include <iostream>
-
+using namespace std;
 #include <string>
 
 class Person {
-  private: std::string name;
+  private: string name;
   int age;
-  std::string country;
+  string country;
 
   public:
     // Setter functions
-    void setName(const std::string & n) {
+    void setName(const string & n) {
       name = n;
     }
 
@@ -17,12 +17,12 @@ class Person {
     age = a;
   }
 
-  void setCountry(const std::string & c) {
+  void setCountry(const string & c) {
     country = c;
   }
 
   // Getter functions
-  std::string getName() {
+ string getName() {
     return name;
   }
 
@@ -30,7 +30,7 @@ class Person {
     return age;
   }
 
-  std::string getCountry() {
+  string getCountry() {
     return country;
   }
 };
@@ -45,9 +45,9 @@ int main() {
   person.setCountry("USA");
 
   // Get and display the person's details
-  std::cout << "Name: " << person.getName() << std::endl;
-  std::cout << "Age: " << person.getAge() << std::endl;
-  std::cout << "Country: " << person.getCountry() << std::endl;
+  cout << "Name: " << person.getName() << endl;
+  cout << "Age: " << person.getAge() << endl;
+  cout << "Country: " << person.getCountry() << endl;
 
   return 0;
 }
