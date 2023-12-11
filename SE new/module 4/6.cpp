@@ -1,5 +1,5 @@
 #include <iostream>
-
+using namespace std;
 #include <cmath>
 
 const double PI = 3.14159;
@@ -25,17 +25,17 @@ class Circle {
 int main() {
   // Create a circle object
   double radius;
-  std::cout << "Input the radius of the circle: ";
-  std::cin >> radius;
+ cout << "Input the radius of the circle: ";
+  cin >> radius;
   Circle circle(radius);
 
   // Calculate and display the area
   double area = circle.calculateArea();
-  std::cout << "Area: " << area << std::endl;
+ cout << "Area: " << area <<endl;
 
   // Calculate and display the circumference
   double circumference = circle.calculateCircumference();
-  std::cout << "Circumference: " << circumference << std::endl;
+  cout << "Circumference: " << circumference << endl;
 
   return 0;
 }
