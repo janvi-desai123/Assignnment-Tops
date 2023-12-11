@@ -1,5 +1,5 @@
 #include <iostream>
-
+using namesapce std;
 class Rectangle {
   private: double length;
   double width;
@@ -23,21 +23,21 @@ class Rectangle {
 int main() {
 
   double length, width;
-  std::cout << "Input the length of the rectangler: ";
-  std::cin >> length;
-  std::cout << "Input the width of the rectangle: ";
-  std::cin >> width;
+  cout << "Input the length of the rectangler: ";
+  cin >> length;
+ cout << "Input the width of the rectangle: ";
+ cin >> width;
 
   // Create a rectangle object
   Rectangle rectangle(length, width);
 
   // Calculate and display the area
   double area = rectangle.calculateArea();
-  std::cout << "\nArea: " << area << std::endl;
+ cout << "\nArea: " << area << endl;
 
   // Calculate and display the perimeter
   double perimeter = rectangle.calculatePerimeter();
-  std::cout << "Perimeter: " << perimeter << std::endl;
+ cout << "Perimeter: " << perimeter <<endl;
 
   return 0;
 }
