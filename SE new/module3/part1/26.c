@@ -4,7 +4,7 @@
 void main()
 {
     float celsius,fahrenheit;
-    clrscr();
+    
  
     printf("\n Enter the Temparature in Celsius : ");
     scanf("%f",&celsius);
