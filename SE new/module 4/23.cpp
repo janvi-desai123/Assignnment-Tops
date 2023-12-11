@@ -32,7 +32,7 @@ class C: public B
         } 
 }; 
   
-// Driver code 
+
 int main() 
 { 
     C obj; 
