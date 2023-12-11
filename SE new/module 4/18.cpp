@@ -28,8 +28,7 @@ class Rectangle1 : public Rectangle
 void Display(void)
      {
        cout << "\n Length = " << get_l( ) ; // Object of the derived class can't
-              //    inherit the private member of the base class. Thus the member
-              //   function is used here to get the value of data member 'length'.
+              
        cout << "\n Breadth = " << breadth ;
        cout << "\n Area = " << area  ;
      }
