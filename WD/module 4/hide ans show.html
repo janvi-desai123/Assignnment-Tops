@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+  
+    <br><br>
+   <label for="">enter password</label>
+    <input type="password" name="" id="p-input"><br>
+    <input type="checkbox" name="" id="check" value="" onchange="view_password()" ><span>show password</span>
+    
+    
+    <script>
+   
+      let new_pass=document.getElementById("p-input");
+      let checkbox=document.getElementById("check");
+      function view_password()
+      {
+        if(new_pass.type==="password")
+        {
+            new_pass.type="text";
+        }
+        else{
+            new_pass.type="password";
+        }
+      }
+    </script>
+</body>
+</html>
