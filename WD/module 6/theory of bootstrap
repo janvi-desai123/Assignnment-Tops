@@ -1,0 +1,41 @@
+Que1: What are the advantages of Bootstrap?
+ Bootstrap is a free, open source front-end development framework for the creation of websites and web apps. 
+Designed to enable responsive development of mobile-first websites, Bootstrap provides a collection of syntax for template designs.
+Advantages:
+Access to a Vast Open Source Community of Resources. 
+There is a vast community of open-source developers who contribute regularly to Bootstrap. ...
+Consistent Designs. ...
+Access to Support. ...
+Fast Development. ...
+Responsive Business Actions with a Grid System. ...
+Customizable Expansion. ...
+Loaded JavaScript Components. ...
+Easy to Integrate.
+
+Que2:What is a Bootstrap Container, and how does it work?
+Bootstrap Containers are the most basic layout element in Bootstrap.
+Bootstrap Containers are very essential and basic building blocks of bootstrap that wrap a page’s content. 
+It’s responsible for setting and aligning content within it according to viewport or given device. Containers are defined within the container class (.container). In other words, we can say that containers are established the width for the layout to give the content. 
+Elements and content are added within the container.
+
+Que3:What are the default Bootstrap text settings?
+Bootstrap 4 uses a default font-size of 16px, and its line-height is 1.5. 
+The default font-family is "Helvetica Neue", Helvetica, Arial, sans-serif.
+
+Que4:What do you know about the Bootstrap Grid System?
+Bootstrap's grid system uses a series of containers, rows, and columns to layout and align content. 
+It's built with flexbox and is fully responsive.
+
+Que5: what is the difference between bootstrap 4 and bootstrap 5
+Bootstrap 4 has five levels: xs, sm, md, lg, and xl. Bootstrap 5 has six levels: xs, sm, md, lg, xl, and xxl.
+Bootstrap 4 includes jquery and all associated plug-ins. 
+Jquery has been deleted and replaced with vanilla JS and several functional plug-ins in Bootstrap 5.
+
+Que6:What is a Button Group, and what is the class for a basic Button Group?
+“Button Groups” in Bootstrap is a class of name “btn-group” which is used to create a series of buttons in groups (without spaces) vertically or horizontally. 
+Syntax: This is the basic syntax of the button group class where each button has its own class of “btn”.
+
+Que7:In Bootstrap 4, what is flexbox?
+Bootstrap 4 now uses flexbox, instead of floats, to handle the layout.
+The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.
+
