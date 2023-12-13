@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        * {
             padding: 0;
             margin: 0;
             box-sizing: border-box;
         }
+
         .container1 {
             display: flex;
             flex-wrap: wrap;
@@ -20,8 +21,8 @@
         }
 
         .box {
-            height: 45vh;
-            width: 30vw;
+            height: 400px;
+            width: 400px;
             color: white;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
@@ -34,7 +35,7 @@
         }
 
         .part1 {
-            font-size: 1.5vw;
+            font-size: 50px;
             height: 50%;
             width: 100%;
             background-color: black;
@@ -53,25 +54,41 @@
             justify-content: space-around;
             color: black;
             align-items: center;
-            font-size: 1.2vw;
+            font-size: 18px;
         }
 
         .text1 {
             text-align: justify;
             width: 90%;
         }
-        .text2{
+
+        .text2 {
             display: flex;
             flex-wrap: wrap;
-            
+
         }
-        span{
-            
+
+        span {
+
             /* flex-wrap: wrap; */
             border: 2px solid black;
             padding: 5px;
         }
 
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+            .part1 {
+                font-size: 40px;
+            }
+
+            .part2 {
+                font-size: 15px;
+            }
+        }
+
+       
+
+       
     </style>
 </head>
 
@@ -155,7 +172,7 @@
                 <div class="text2">
                     <span>view</span>
                     <span>edit</span>
-                </div>  
+                </div>
             </div>
         </div>
     </div>
