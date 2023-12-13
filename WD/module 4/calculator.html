@@ -1,125 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="C:\xampp\htdocs\vaibhav1\Development\CAR RENT\carbook-master\images\car-10.jpg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="calculator.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-size: 35px;
+            line-height: 60px;
+        }
+        .container{
+            height: 50vh;
+            width: 50vw;
+            padding: 20px;
+            margin: 20px;
+            border: 3px solid;
+        }
+        h1{
+            text-align: center;
+        }
+        input{
+            margin-left: 50px;
+            width: 300px;
+        }
+        button{
+            width: 50px;
+        }
+        b{
+            color: blue;
+        }
+    </style>
 </head>
 <body>
-    <div class="calculator">
-      <input id="display_box"type="text"class="display" readonly>
-        <div class="but-con">
-            <button onclick="clear()">C</button>
-            <button onclick="one()" >1</button>
-            <button onclick="two()">2</button>
-            <button onclick="plus()">+</button>
-            <button onclick="three()">3</button>
-            <button onclick="four()">4</button>
-            <button onclick="minus()">-</button>
-            <button onclick="five()">5</button>
-            <button onclick="six()">6</button>
-            <button onclick="mul()">*</button>
-            <button onclick="seven()">7</button>
-            <button onclick="eight()">8</button>
-            <button onclick="div()">/</button>
-            <button onclick="result()">=</button>
-            <button onclick="nine()">9</button>
-            <button onclick="zero()">0</button>
-            <button onclick="point()">.</button>
-        </div>
+    <div class="container">
+        <h1>Maths Operations </h1>
+        <table>
+            <tr>
+                <td>Enter 1st numebr:</td>
+                <td><input type="number" name="" id="n1"></td>
+            </tr>
+            <tr>
+                <td>Enter 2nd numebr:</td>
+                <td><input type="number" name="" id="n2"></td>
+            </tr>
+            <tr>
+                <td><button onclick="add()">+</button>
+                    <button onclick="minus()">-</button>
+                    <button onclick="mul()">*</button>
+               
+                <td rowspan="2" id="anscol">Answer is <b id="ans">0</b></td>
+            </tr>
+            <tr>
+                <td><button onclick="div()">/</button>
+                    <button onclick="mod()">%</button>
+                </td>
+                
+            </tr>
+        </table>
+        
     </div>
     <script>
-        let current_value=' ';
-        function clear()
+        let value1=document.getElementById('n1');
+        let value2=document.getElementById('n2');
+
+        function add()
         {
-            current_value='  ';
-            document.querySelector('#display_box').value=current_value;
-        }
-        function one()
-        {
-            current_value=current_value+'1';
-            document.querySelector('#display_box').value=current_value;
-        }
-        function two()
-        {
-            current_value=current_value+'2';
-            document.querySelector('#display_box').value=current_value;
-        }
-        function three()
-        {
-            current_value=current_value+'3';
-            document.querySelector('#display_box').value=current_value;
-        }
-        function four()
-        {
-            current_value=current_value+'4';
-            document.querySelector('#display_box').value=current_value;
-        }
-        function five()
-        {
-            current_value=current_value+'5';
-            document.querySelector('#display_box').value=current_value;
-        }
-        function six()
-        {
-            current_value=current_value+'6';
-            document.querySelector('#display_box').value=current_value;
-        }
-        function seven()
-        {
-            current_value=current_value+'7';
-            document.querySelector('#display_box').value=current_value;
-        }
-        function eight()
-        {
-            current_value=current_value+'8';
-            document.querySelector('#display_box').value=current_value;
-        }
-        function nine()
-        {
-            current_value=current_value+'9';
-            document.querySelector('#display_box').value=current_value;
-        }
-        function zero()
-        {
-            current_value=current_value+'0';
-            document.querySelector('#display_box').value=current_value;
-        }
-        function point()
-        {
-            current_value=current_value+'.';
-            document.querySelector('#display_box').value=current_value;
-        }
-        function plus()
-        {
-            current_value=current_value+'+';
-            document.querySelector('#display_box').value=current_value;
+            let ans=Number(value1.value)+Number(value2.value);
+            document.getElementById('ans').innerHTML=ans;
         }
         function minus()
         {
-            current_value=current_value+'-';
-            document.querySelector('#display_box').value=current_value;
+            let ans=Number(value1.value)-Number(value2.value);
+            document.getElementById('ans').innerHTML=ans;
         }
         function mul()
         {
-            current_value=current_value+'*';
-            document.querySelector('#display_box').value=current_value;
+            let ans=Number(value1.value)*Number(value2.value);
+            document.getElementById('ans').innerHTML=ans;
         }
         function div()
         {
-            current_value=current_value+'/';
-            document.querySelector('#display_box').value=current_value;
-        }
-        function result()
-        {
-            let res;
-            res=eval(current_value);
-           
-            document.querySelector('#display_box').value=res;
-        }
+            if(value2.value==='0')
+            {
+                
+                document.getElementById('ans').innerHTML="can't divide by zero";
 
+            }
+            else{
+
+            
+            let ans=Number(value1.value)/Number(value2.value);
+            document.getElementById('ans').innerHTML=ans;
+            }
+        }
+        function mod()
+        {
+            let ans=Number(value1.value)%Number(value2.value);
+            document.getElementById('ans').innerHTML=ans;
+        }
     </script>
 </body>
 </html>
