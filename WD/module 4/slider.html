@@ -1,42 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
-      .slider {
-        height: 600px;
-        width: 50%;
-      }
-      .slide {
-        display: none;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="slider">
+        *{
+            box-sizing: border-box;
+        }
+       body{
+        margin: 0;
         
-        <img src="image1.jpg" width="100%" alt="" class="slide" />
-        <img src="image2.jfif" width="100%" alt="" class="slide" />
-        <img src="image3.jpg" width="100%" alt="" class="slide" />
-      </div>
-      <script>
-        var value = 0;
-      slideshow();
-      function slideshow() {
-        var loop;
-        var slide = document.getElementsByClassName("slide");
-        for (loop = 0; loop < slide.length; loop++) {
-          slide[loop].style.display = "none";
+        font-family: Arial, Helvetica, sans-serif;
+      
+       }     
+       .slider{
+        min-height: 30em;
+        width: 100vh;
+        position: relative;
+        background-image: url(img1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        transition: 0.3s;
+       }
+       .next,.pre{
+        background-color:#fff;
+        color: black;
+        position: absolute;
+        top: 40%;
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.3s;
+       }
+       .next:hover,.pre:hover{
+        background-color: black;
+        color: white;
+       }
+       .pre{
+        left: 1em;
+       }
+       .next{
+        right: 1em;
+       }
+       .caption{
+        background-image: linear-gradient(rgba(0,0,0,0),black);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 4em 1em 2em 1em;
+       }
+       .caption h1{
+        color: white;
+       }
+       .caption p{
+        color: whitesmoke;
+       }
+       .image-fade{
+        animation: imgfade 0.5s ease-in-out;
+       }
+       @keyframes imgfade {
+            0%{opacity: 0;}
+            100%{opacity: 1;}
+       }
+    </style>
+</head>
+<body>
+    <section class="slider">
+        <div class="pre">
+            <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <div class="next">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <div class="caption">
+            <h1 class="heading">Heading 1</h1>
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </section>
+    <script>
+        const slider=document.querySelector(".slider");
+        const pre=document.querySelector(".pre");
+        const next=document.querySelector(".next");
+        const heading=document.querySelector(".heading");
+        const desc=document.querySelector(".desc");
+
+        const images=[
+            "img1.jpg","img2.jpg","img3.jpg"
+        ];
+        const headings=[
+            "heading1","heading2","heading3"
+
+        ];
+        let id=0;
+        function slide(id)
+        {
+            slider.style.backgroundImage=`url(${images[id]})`;
+            slider.classList.add('image-fade');
+
+            setTimeout(() => {
+                slider.classList.remove('image-fade');
+            }, 550);
+
+            heading.innerText=headings[id];
         }
-        value++;
-        if (value > slide.length) {
-          value = 1;
-        }
-        slide[value - 1].style.display = "block";
-        setTimeout(slideshow, 2000);
-      }
-      </script>
-  </body>
+            pre.addEventListener('click',()=>{
+                id--;
+                if(id<0)
+                {
+                    id=images.length-1;
+                }
+                slide(id);
+            });
+           
+
+            next.addEventListener('click',()=>{
+                id++;
+                if(id>images.length-1)
+                {
+                    id=0;
+                }
+                slide(id);
+            });
+           
+        
+    </script>
+</body>
 </html>
