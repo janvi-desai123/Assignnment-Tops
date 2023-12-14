@@ -1,0 +1,50 @@
+
+@media screen and (max-width:775px) {
+    nav {
+        padding: 40px 0;
+        width: 80%;
+    }
+    .bars i{
+        display: block;
+    }
+    nav ul {
+        display: none;
+    }
+
+    .col-1 {
+        flex-basis: 100%;
+    }
+
+    .btn-1 {
+        margin: 10px;
+    }
+
+    .main h1 {
+        font-size: 40px;
+    }
+}
+
+@media (min-width:776px) and (max-width:1200px) {
+    nav {
+        padding: 40px 0;
+        width: 80%;
+    }
+    .bars i{
+        display: block;
+    }
+    nav ul {
+        display: none;
+    }
+
+    .main h1 {
+        font-size: 50px;
+    }
+
+    .col-1 {
+        flex-basis: 40%;
+    }
+
+    .col-1 p {
+        text-align: center;
+    }
+}
